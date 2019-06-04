@@ -15,13 +15,18 @@ h1 {
 	padding: 0.83em 0;
 }
 
+.container {
+	height: inherit;
+    margin: 1em 1.5em;
+}
+
 #about {
 	text-align: center;
 
 	#profile {
 		margin-top: 40%;
 		margin-bottom: 10%;
-		height: 25%;
+		height: 30%;
 		border-radius: 50%;
 	}
 
