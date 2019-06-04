@@ -24,7 +24,7 @@ nav ul li {
 
 section {
   display: block;
-  height: 85%;
+  height: calc(85% + 1.5em);
 }
 section h1 {
   font-family: Helvetica, Arial, sans-serif;
@@ -47,7 +47,7 @@ h1 {
 
 .container {
   height: inherit;
-  margin: 1em 1.5em;
+  margin: 0 1.5em 1em 1.5em;
 }
 
 #about {
@@ -55,13 +55,13 @@ h1 {
 }
 #about #profile {
   margin-top: 30%;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   height: 40%;
   border-radius: 50%;
 }
 #about #hello {
   padding-top: 0;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.1em;
 }
 #about #im {
   padding-top: 0.15em;

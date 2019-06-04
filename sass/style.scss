@@ -17,7 +17,7 @@ h1 {
 
 .container {
 	height: inherit;
-    margin: 1em 1.5em;
+    margin: 0 1.5em 1em 1.5em;
 }
 
 #about {
@@ -25,14 +25,14 @@ h1 {
 
 	#profile {
 		margin-top: 30%;
-		margin-bottom: 10%;
+		margin-bottom: 15%;
 		height: 40%;
 		border-radius: 50%;
 	}
 
 	#hello {
 		padding-top: 0;
-		padding-bottom: 0.2em;
+		padding-bottom: 0.1em;
 	}
 
 	#im {
