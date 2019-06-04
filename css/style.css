@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav #logo {
+  width: 20%;
+}
+nav button {
+  line-height: 3;
+}
+
+section {
+  display: block;
+  text-align: center;
+  height: 70vh;
+}
+section h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 5rem;
+}
+
+body {
+  margin: 5vh 5vw;
+}
+
+/*# sourceMappingURL=style.css.map */

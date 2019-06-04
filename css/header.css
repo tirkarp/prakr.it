@@ -1,0 +1,13 @@
+nav {
+  margin: 5vh 5vw;
+  padding: 0;
+  width: 100%;
+}
+nav #logo {
+  width: 20%;
+}
+nav button {
+  line-height: 2;
+}
+
+/*# sourceMappingURL=header.css.map */
