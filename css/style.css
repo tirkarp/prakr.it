@@ -56,14 +56,15 @@ h1 {
 #about #profile {
   margin-top: 30%;
   margin-bottom: 10%;
-  height: 30%;
+  height: 40%;
   border-radius: 50%;
 }
 #about #hello {
+  padding-top: 0;
   padding-bottom: 0.2em;
 }
 #about #im {
-  padding-top: 0.2em;
+  padding-top: 0.15em;
   padding-right: 0.2em;
   display: inline-block;
 }
