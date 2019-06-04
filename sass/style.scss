@@ -1,4 +1,5 @@
-@import 'header';
+@import 'nav';
+@import 'section';
 
 html {
     height: 100%;
@@ -7,4 +8,40 @@ html {
 body {
     margin: 0;
     height: 100%;
+}
+
+h1 {
+	margin: 0;
+	padding: 0.83em 0;
+}
+
+#about {
+	text-align: center;
+
+	#profile {
+		margin-top: 40%;
+		margin-bottom: 10%;
+		height: 25%;
+		border-radius: 50%;
+	}
+
+	#hello {
+		padding-bottom: 0.2em;
+	}
+
+	#im {
+		padding-top: 0.2em;
+		padding-right: 0.2em;
+		display: inline-block;
+	}
+
+	#name {
+		display: inline-block;
+		width: 50%;
+		height: auto;
+	}
+}
+
+#blog {
+	background-color: aquamarine;
 }
