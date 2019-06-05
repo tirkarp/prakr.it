@@ -100,6 +100,8 @@ h1 {
 }
 #about #name {
   display: inline-block;
+  position: relative;
+  top: 0.3em;
   width: 60%;
   height: auto;
 }
