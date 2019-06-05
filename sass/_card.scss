@@ -1,9 +1,17 @@
 $radius-value: 5%;
 
+#scrolling-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 90%;
+}
+
 .card {
+    cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 35%;
+    width: 60%;
     border-radius: $radius-value;
     background-color: white;
 
@@ -12,6 +20,7 @@ $radius-value: 5%;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        object-fit: cover;
         border-radius: $radius-value $radius-value 0 0;
     }
 
