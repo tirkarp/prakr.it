@@ -1,3 +1,5 @@
+$container-margin: 1.5em;
+
 @import 'nav';
 @import 'section';
 @import 'card';
@@ -13,12 +15,12 @@ body {
 
 h1 {
 	margin: 0;
-	padding: 0.83em 0;
+	padding: 0.67em 0;
 }
 
 .container {
 	height: 100%;
-    margin: 0 1.5em;
+    margin: 0 $container-margin;
 }
 
 #about {

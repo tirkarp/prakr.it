@@ -32,26 +32,22 @@ section h1 {
 }
 
 #scrolling-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: start;
-  align-items: stretch;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
-  height: inherit;
+  height: calc(100% - 7rem);
 }
 #scrolling-wrapper::-webkit-scrollbar {
   display: none;
 }
 
 .card:first-child {
-  margin-left: 20px;
+  margin-left: 1.5em;
 }
 
 .card:last-child {
-  margin-right: 20px;
+  margin-right: 1.5em;
 }
 
 .card {
@@ -62,8 +58,8 @@ section h1 {
   width: 50%;
   border-radius: 5%;
   background-color: white;
-  flex: 0 0 auto;
-  margin: 0 10px;
+  margin: 0 0.5em;
+  height: 90%;
 }
 .card img {
   display: block;
@@ -100,7 +96,7 @@ body {
 
 h1 {
   margin: 0;
-  padding: 0.83em 0;
+  padding: 0.67em 0;
 }
 
 .container {

@@ -1,15 +1,11 @@
 $radius-value: 5%;
 
 #scrolling-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: start;
-    align-items: stretch;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-    height: inherit;
+	height: calc(100% - 7rem);
 
     &::-webkit-scrollbar {
     display: none;
@@ -17,11 +13,11 @@ $radius-value: 5%;
 }
 
 .card:first-child {
-    margin-left: 20px;
+    margin-left: $container-margin;
 }
 
 .card:last-child {
-    margin-right: 20px;
+    margin-right: $container-margin;
 }
 
 .card {
@@ -32,8 +28,8 @@ $radius-value: 5%;
     width: 50%;
     border-radius: $radius-value;
     background-color: white;
-    flex: 0 0 auto;
-    margin: 0 10px;
+	margin: 0 ($container-margin / 3);
+	height: 90%;
 
     img {
         display: block;
