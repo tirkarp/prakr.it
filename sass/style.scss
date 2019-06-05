@@ -17,7 +17,7 @@ h1 {
 }
 
 .container {
-	height: inherit;
+	height: 100%;
     margin: 0 1.5em;
 }
 
@@ -54,6 +54,10 @@ h1 {
 #blog {
 	height: 70%;
 	background-color: aquamarine;
+
+	.container {
+		height: initial;
+	}
 }
 
 #contact {
