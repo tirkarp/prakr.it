@@ -34,8 +34,21 @@ section h1 {
 #scrolling-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: start;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
   height: 90%;
+  /* offset container */
+  margin: 0 -1.5em;
+}
+
+.card:first-child {
+  margin-left: 20px;
+}
+
+.card:last-child {
+  margin-right: 20px;
 }
 
 .card {
@@ -45,6 +58,8 @@ section h1 {
   width: 60%;
   border-radius: 5%;
   background-color: white;
+  flex: 0 0 auto;
+  margin: 0 10px;
 }
 .card img {
   display: block;
@@ -86,7 +101,7 @@ h1 {
 
 .container {
   height: inherit;
-  margin: 0 1.5em 1em 1.5em;
+  margin: 0 1.5em;
 }
 
 #about {
