@@ -1,5 +1,5 @@
 $container-margin: 1.5em;
-$container-content: calc(100% - 7rem);
+$container-content: calc(100% - 8rem);
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
@@ -74,10 +74,12 @@ h1 {
 
 #calendar {
 	iframe {
-		height: $container-content;
 		width: 100px !important;
+		height: 100px !important;
 		min-width: 100%;
+		min-height: $container-content;
 		*width: 100%;
+		*height: $container-content;
 	}
 }
 

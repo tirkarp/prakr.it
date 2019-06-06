@@ -37,7 +37,7 @@ section h1 {
   overflow-y: hidden;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
-  height: calc(100% - 7rem);
+  height: calc(100% - 8rem);
 }
 #scrolling-wrapper::-webkit-scrollbar {
   display: none;
@@ -167,10 +167,12 @@ h1 a {
 }
 
 #calendar iframe {
-  height: calc(100% - 7rem);
   width: 100px !important;
+  height: 100px !important;
   min-width: 100%;
+  min-height: calc(100% - 8rem);
   *width: 100%;
+  *height: calc(100% - 8rem);
 }
 
 #contact {
