@@ -98,6 +98,10 @@ h1 {
   margin: 0;
   padding: 0.67em 0;
 }
+h1 a {
+  text-decoration: none;
+  color: initial;
+}
 
 .container {
   height: 100%;
