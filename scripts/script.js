@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 			let cards = '';
 
 			posts.forEach((item) => {
-				let pubDate = new Date(item.pubDate);
+				let pubDate = new Date(Date.parse(item.pubDate));
 
 				let card = createCard(
 					shorten(item.title, 50),
