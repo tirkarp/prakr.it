@@ -60,6 +60,11 @@ section h1 {
   background-color: white;
   margin: 0 0.5em;
   height: 90%;
+  vertical-align: top;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
 }
 .card img {
   display: block;
@@ -79,6 +84,7 @@ section h1 {
 .card .card-content p {
   margin-top: 0.2em;
   margin-bottom: 0.8em;
+  overflow: hidden;
 }
 
 .card:hover {
