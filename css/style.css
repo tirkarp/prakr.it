@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 nav {
   /* display will remain hidden until
   user scrolls past landing screen */
@@ -56,15 +57,18 @@ section h1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 50%;
-  border-radius: 5%;
-  background-color: white;
+  border-radius: 8px;
   margin: 0 0.5em;
   height: 90%;
   vertical-align: top;
+  background-color: white;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 .card a {
   text-decoration: none;
   color: inherit;
+  display: block;
+  height: 100%;
 }
 .card img {
   display: block;
@@ -73,10 +77,13 @@ section h1 {
   height: 40%;
   width: 100%;
   object-fit: cover;
-  border-radius: 5% 5% 0 0;
+  border-radius: 8px 8px 0 0;
 }
 .card .card-content {
-  padding: 0.6% 4.8%;
+  padding: 0.6% 6%;
+  height: 60%;
+  overflow: hidden;
+  white-space: normal;
 }
 .card .card-content h4 {
   margin-top: 0.8em;
@@ -94,6 +101,7 @@ section h1 {
 
 html {
   height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 body {

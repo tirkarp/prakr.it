@@ -1,4 +1,4 @@
-$radius-value: 5%;
+$radius-value: 8px;
 
 #scrolling-wrapper {
     overflow-x: auto;
@@ -27,14 +27,18 @@ $radius-value: 5%;
     transition: 0.3s;
     width: 50%;
     border-radius: $radius-value;
-    background-color: white;
     margin: 0 ($container-margin / 3);
     height: 90%;
     vertical-align: top;
 
+    background-color: white;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+
     a {
         text-decoration: none;
         color: inherit;
+        display: block;
+        height: 100%;
     }
 
     img {
@@ -48,7 +52,10 @@ $radius-value: 5%;
     }
 
     .card-content {
-        padding: 0.6% 4.8%;
+        padding: 0.6% 6%;
+        height: 60%;
+        overflow: hidden;
+        white-space: normal;
 
         h4 {
             margin-top: 0.8em;

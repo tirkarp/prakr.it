@@ -4,7 +4,6 @@ function createCard(title, image, description, url, date) {
         <img src="${image}">
         <div class="card-content">
         <h4>${title}</h4>
-        <p>${description}</p>
         </div></a></div>`;
 }
 
@@ -42,7 +41,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 			posts.forEach((item) => {
 				let card = createCard(
-					shorten(item.title, 5),
+					shorten(item.title, 50),
 					item.thumbnail,
 					shorten(toText(item.description), 5),
 					item.link,
