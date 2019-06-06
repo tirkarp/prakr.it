@@ -1,4 +1,5 @@
 $container-margin: 1.5em;
+$container-content: calc(100% - 7rem);
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
@@ -33,6 +34,7 @@ h1 {
 
 #about {
 	text-align: center;
+	height: calc(88% + 1.5em);
 
 	#profile {
 		margin-top: 30%;
@@ -67,6 +69,13 @@ h1 {
 
 	.container {
 		height: initial;
+	}
+}
+
+#calendar {
+	iframe {
+		height: $container-content;
+		width: 100%;
 	}
 }
 

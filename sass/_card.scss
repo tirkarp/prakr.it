@@ -6,7 +6,7 @@ $card-margin: 0.8em;
     overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-	height: calc(100% - 7rem);
+	height: $container-content;
 
     &::-webkit-scrollbar {
     display: none;
@@ -79,4 +79,5 @@ $card-margin: 0.8em;
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration: underline;
 }
