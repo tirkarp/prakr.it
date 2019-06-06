@@ -29,7 +29,7 @@ $card-margin: 0.8em;
     width: 50%;
     border-radius: $radius-value;
     margin: 0 ($container-margin / 3);
-    height: 90%;
+    height: 95%;
     vertical-align: top;
 
     background-color: white;
@@ -81,6 +81,6 @@ $card-margin: 0.8em;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
     h4 {
-        text-decoration: underline #777777;
+        text-decoration: underline;
     }
 }

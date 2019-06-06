@@ -59,7 +59,7 @@ section h1 {
   width: 50%;
   border-radius: 8px;
   margin: 0 0.5em;
-  height: 90%;
+  height: 95%;
   vertical-align: top;
   background-color: white;
 }
@@ -104,7 +104,7 @@ section h1 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .card:hover h4 {
-  text-decoration: underline #777777;
+  text-decoration: underline;
 }
 
 html {
@@ -175,7 +175,21 @@ h1 a {
 
 #contact {
   height: 40%;
-  background-color: lightgray;
+  background-color: #f5f5f5;
+}
+#contact #contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: calc(100% - 8rem);
+}
+#contact svg {
+  width: 15%;
+  fill: #777777;
+}
+#contact #credits {
+  color: #777777;
+  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=style.css.map */

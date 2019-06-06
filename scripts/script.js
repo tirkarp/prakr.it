@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 				cards += card;
 			});
 
-			document.getElementById('scrolling-wrapper').innerHTML += cards;
+			document.getElementById('scrolling-wrapper').innerHTML = cards;
 		})
 		.catch((err) => {
 			console.log(err);

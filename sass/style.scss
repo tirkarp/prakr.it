@@ -83,5 +83,22 @@ h1 {
 
 #contact {
 	height: 40%;
-	background-color: lightgray;
+	background-color: #f5f5f5;
+
+	#contact-icons {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-height: $container-content;
+	}
+
+	svg {
+		width: 15%;
+		fill: #777777;
+	}
+
+	#credits {
+		color: #777777;
+		font-size: 0.8em;
+	}
 }
