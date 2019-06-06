@@ -168,7 +168,7 @@ h1 a {
 
 #calendar iframe {
   height: calc(100% - 7rem);
-  width: 100%;
+  width: 100% !important;
 }
 
 #contact {

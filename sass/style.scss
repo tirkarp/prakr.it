@@ -75,7 +75,7 @@ h1 {
 #calendar {
 	iframe {
 		height: $container-content;
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
