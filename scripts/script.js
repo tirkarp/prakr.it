@@ -3,7 +3,9 @@ function createCard(title, image, description, url, date) {
 		<a href="${url}">
         <img src="${image}">
         <div class="card-content">
-        <h4>${title}</h4>
+		<h3>${title}</h3>
+		<p class="description">${description}</p>
+		<p class="date">${date}</p>
         </div></a></div>`;
 }
 
@@ -40,12 +42,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
 			let cards = '';
 
 			posts.forEach((item) => {
+				let pubDate = new Date(item.pubDate);
+
 				let card = createCard(
 					shorten(item.title, 50),
 					item.thumbnail,
-					shorten(toText(item.description), 5),
+					shorten(toText(item.description), 50),
 					item.link,
-					item.pubDate
+					pubDate.toLocaleDateString(
+						'default',
+						{ year: 'numeric', month: 'long', day: 'numeric' }
+					)
 				);
 				
 				cards += card;
