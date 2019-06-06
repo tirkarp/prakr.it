@@ -1,5 +1,6 @@
 $container-margin: 1.5em;
 $container-content: calc(100% - 8rem);
+$greyscale-color: #777777;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
@@ -88,17 +89,21 @@ h1 {
 	#contact-icons {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-around;
 		max-height: $container-content;
 	}
 
 	svg {
-		width: 15%;
-		fill: #777777;
+		width: 10%;
+		fill: $greyscale-color;
+	}
+
+	a {
+		color: $greyscale-color;
 	}
 
 	#credits {
-		color: #777777;
+		color: $greyscale-color;
 		font-size: 0.8em;
 	}
 }

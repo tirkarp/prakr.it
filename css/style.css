@@ -180,12 +180,15 @@ h1 a {
 #contact #contact-icons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   max-height: calc(100% - 8rem);
 }
 #contact svg {
-  width: 15%;
+  width: 10%;
   fill: #777777;
+}
+#contact a {
+  color: #777777;
 }
 #contact #credits {
   color: #777777;
