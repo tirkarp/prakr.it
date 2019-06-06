@@ -3,7 +3,7 @@ function createCard(title, image, description, url, date) {
 		<a href="${url}">
         <img src="${image}">
         <div class="card-content">
-		<h3>${title}</h3>
+		<h4>${title}</h4>
 		<p class="description">${description}</p>
 		<p class="date">${date}</p>
         </div></a></div>`;
@@ -42,17 +42,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
 			let cards = '';
 
 			posts.forEach((item) => {
-				let pubDate = new Date(Date.parse(item.pubDate));
+				let pubDate = new Date(Date.parse(item.pubDate.replace(/ /g, 'T')));
+				let dateString = pubDate.toLocaleDateString(
+					'default',
+					{ year: 'numeric', month: 'long', day: 'numeric' }
+				);
+				
+				// check for invalid dates
+				dateString = dateString ? dateString : '';
 
 				let card = createCard(
 					shorten(item.title, 50),
 					item.thumbnail,
 					shorten(toText(item.description), 50),
 					item.link,
-					pubDate.toLocaleDateString(
-						'default',
-						{ year: 'numeric', month: 'long', day: 'numeric' }
-					)
+					dateString
 				);
 				
 				cards += card;
