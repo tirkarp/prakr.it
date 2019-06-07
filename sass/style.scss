@@ -4,9 +4,13 @@ $greyscale-color: #777777;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-@import 'nav';
 @import 'section';
 @import 'card';
+
+@import 'about';
+@import 'blog';
+@import 'calendar';
+@import 'contact';
 
 html {
     height: 100%;
@@ -31,94 +35,4 @@ h1 {
 .container {
 	height: 100%;
     margin: 0 $container-margin;
-}
-
-#about {
-	text-align: center;
-	height: calc(88% + 1.5em);
-
-	#profile {
-		margin-top: 30%;
-		margin-bottom: 20%;
-		height: 40%;
-		border-radius: 50%;
-	}
-
-	#hello {
-		padding-top: 0;
-		padding-bottom: 0.1em;
-	}
-
-	#im {
-		padding-top: 0.15em;
-		padding-right: 0.2em;
-		display: inline-block;
-	}
-
-	#name {
-		display: inline-block;
-		position: relative;
-		top: 0.3em;
-		width: 60%;
-		height: auto;
-	}
-}
-
-#blog {
-	height: 70%;
-	background-color: aquamarine;
-
-	.container {
-		height: initial;
-	}
-}
-
-#calendar {
-	iframe {
-		width: 100px !important;
-		height: 100px !important;
-		min-width: 100%;
-		min-height: $container-content;
-	}
-}
-
-#contact {
-	height: 50%;
-	background-color: #f5f5f5;
-
-	#contact-icons {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		max-height: $container-content;
-		margin: 1.2em 0;
-
-		a {
-			display: inline-block;
-			text-align: center;
-			margin: 0 10%;
-		}
-	}
-
-	svg {
-		width: 100%;
-		fill: $greyscale-color;
-	}
-
-	a {
-		color: $greyscale-color;
-	}
-
-	h1 {
-		padding-bottom: 0;
-	}
-
-	p {
-		color: $greyscale-color;
-		font-size: 0.8em;
-	}
-
-	#credits, #credits * {
-		color: #c0c0c0;
-	}
 }

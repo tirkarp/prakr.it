@@ -1,0 +1,40 @@
+#contact {
+	height: 50%;
+	background-color: #f5f5f5;
+
+	#contact-icons {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-height: $container-content;
+		margin: 1.2em 0;
+
+		a {
+			display: inline-block;
+			text-align: center;
+			margin: 0 10%;
+		}
+	}
+
+	svg {
+		width: 100%;
+		fill: $greyscale-color;
+	}
+
+	a {
+		color: $greyscale-color;
+	}
+
+	h1 {
+		padding-bottom: 0;
+	}
+
+	p {
+		color: $greyscale-color;
+		font-size: 0.8em;
+	}
+
+	#credits, #credits * {
+		color: #c0c0c0;
+	}
+}

@@ -1,0 +1,30 @@
+#about {
+	text-align: center;
+	height: calc(88% + 1.5em);
+
+	#profile {
+		margin-top: 30%;
+		margin-bottom: 20%;
+		height: 40%;
+		border-radius: 50%;
+	}
+
+	#hello {
+		padding-top: 0;
+		padding-bottom: 0.1em;
+	}
+
+	#im {
+		padding-top: 0.15em;
+		padding-right: 0.2em;
+		display: inline-block;
+	}
+
+	#name {
+		display: inline-block;
+		position: relative;
+		top: 0.3em;
+		width: 60%;
+		height: auto;
+	}
+}
