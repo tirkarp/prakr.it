@@ -180,17 +180,21 @@ h1 a {
 #contact #contact-icons {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   max-height: calc(100% - 8rem);
+  margin: 1.2em 0;
 }
 #contact svg {
-  width: 10%;
+  width: 80%;
   fill: #777777;
 }
 #contact a {
   color: #777777;
 }
-#contact #credits {
+#contact h1 {
+  padding-bottom: 0;
+}
+#contact p {
   color: #777777;
   font-size: 0.8em;
 }

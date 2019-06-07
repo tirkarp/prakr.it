@@ -1,6 +1,6 @@
 function createCard(title, image, description, url, date) {
 	return `<div class="card">
-		<a href="${url}">
+		<a href="${url}" title="${title}">
         <img src="${image}">
         <div class="card-content">
 		<h4>${title}</h4>
