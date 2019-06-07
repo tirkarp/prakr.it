@@ -3,13 +3,18 @@ section {
   display: block;
   height: calc(85% + 1.5em);
   min-height: 100px;
-  min-width: 350px;
+  min-width: 20em;
 }
 section h1 {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 2.4rem;
 }
 
+@media only screen and (min-width: 768px) {
+  section {
+    min-width: 48em;
+  }
+}
 #scrolling-wrapper {
   overflow-x: auto;
   overflow-y: hidden;
@@ -89,7 +94,7 @@ section h1 {
 #about {
   text-align: center;
   height: calc(88% + 1.5em);
-  min-height: 450px;
+  min-height: 32em;
 }
 #about #profile {
   margin-top: 15vh;
@@ -100,6 +105,7 @@ section h1 {
 #about #hello {
   padding-top: 0;
   padding-bottom: 0.1em;
+  text-align: center;
 }
 #about #intro {
   white-space: nowrap;
@@ -135,6 +141,16 @@ section h1 {
     width: 25em;
     top: 0.8em;
     margin-left: -0.5em;
+  }
+}
+@media only screen and (min-height: 720px) {
+  #about #profile {
+    margin-top: 24vh;
+  }
+}
+@media only screen and (min-height: 1366px) {
+  #about #profile {
+    margin-top: 32vh;
   }
 }
 #blog {
