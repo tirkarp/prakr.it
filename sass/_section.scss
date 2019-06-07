@@ -1,6 +1,7 @@
 section {
     display: block;
     height: calc(85% + 1.5em);
+    min-height: 100px;
 
     h1 {
         font-family: Helvetica, Arial, sans-serif;
