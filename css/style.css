@@ -90,8 +90,8 @@ section h1 {
   height: calc(88% + 1.5em);
 }
 #about #profile {
-  margin-top: 30%;
-  margin-bottom: 20%;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
   height: 40%;
   border-radius: 50%;
 }
@@ -112,6 +112,25 @@ section h1 {
   height: auto;
 }
 
+@media only screen and (min-width: 650px) {
+  #about #profile {
+    margin-top: 12vh;
+    margin-bottom: 3em;
+  }
+  #about #greeting {
+    white-space: nowrap;
+  }
+  #about #greeting > * {
+    display: inline-block;
+  }
+  #about #intro {
+    padding-left: 1em;
+  }
+  #about #name {
+    width: 25em;
+    top: 0.8em;
+  }
+}
 #blog {
   height: 70%;
   background-color: aquamarine;

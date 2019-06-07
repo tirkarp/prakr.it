@@ -3,8 +3,8 @@
 	height: calc(88% + 1.5em);
 
 	#profile {
-		margin-top: 30%;
-		margin-bottom: 20%;
+		margin-top: 15vh;
+		margin-bottom: 10vh;
 		height: 40%;
 		border-radius: 50%;
 	}
@@ -26,5 +26,31 @@
 		top: 0.3em;
 		width: 60%;
 		height: auto;
+	}
+}
+
+@media only screen and (min-width: 650px) {
+	#about {
+		#profile {
+			margin-top: 12vh;
+			margin-bottom: 3em;
+		}
+
+		#greeting {
+			white-space: nowrap;
+		}
+
+		#greeting > * {
+			display: inline-block;
+		}
+
+		#intro {
+			padding-left: 1em;
+		}
+
+		#name {
+			width: 25em;
+			top: 0.8em;
+		}
 	}
 }

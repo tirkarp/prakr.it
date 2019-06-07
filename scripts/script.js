@@ -64,6 +64,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 			document.getElementById('scrolling-wrapper').innerHTML = cards;
 		})
+		.then(() => {
+
+			// if card description overlaps with the date, hide the date
+			let descriptions = document.querySelectorAll('.description');
+			let dates = document.querySelectorAll('.date');
+
+			for (let i = 0; i < descriptions.length; i++) {
+				let description = descriptions.item(i);
+				let date = dates.item(i);
+
+				if (description.getBoundingClientRect().bottom >
+					date.getBoundingClientRect().top) {
+					date.remove();
+				}
+			}
+		})
 		.catch((err) => {
 			console.log(err);
 		});
