@@ -3,6 +3,7 @@ section {
   display: block;
   height: calc(85% + 1.5em);
   min-height: 100px;
+  min-width: 350px;
 }
 section h1 {
   font-family: Helvetica, Arial, sans-serif;
@@ -88,16 +89,20 @@ section h1 {
 #about {
   text-align: center;
   height: calc(88% + 1.5em);
+  min-height: 450px;
 }
 #about #profile {
   margin-top: 15vh;
   margin-bottom: 10vh;
-  height: 40%;
+  height: 12em;
   border-radius: 50%;
 }
 #about #hello {
   padding-top: 0;
   padding-bottom: 0.1em;
+}
+#about #intro {
+  white-space: nowrap;
 }
 #about #im {
   padding-top: 0.15em;
@@ -108,14 +113,14 @@ section h1 {
   display: inline-block;
   position: relative;
   top: 0.3em;
-  width: 60%;
+  width: 12em;
   height: auto;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 768px) {
   #about #profile {
-    margin-top: 12vh;
-    margin-bottom: 3em;
+    margin-top: 20vh;
+    margin-bottom: 8vh;
   }
   #about #greeting {
     white-space: nowrap;
@@ -129,6 +134,7 @@ section h1 {
   #about #name {
     width: 25em;
     top: 0.8em;
+    margin-left: -0.5em;
   }
 }
 #blog {
