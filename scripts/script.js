@@ -1,6 +1,9 @@
 // stores suitably-lengthed description of each blog card
 let cardDetails = [];
 
+// initial window width
+let windowWidth = window.innerWidth;
+
 
 function shorten(text, maxLength) {
 	return text.length > maxLength ? 
@@ -158,6 +161,11 @@ window.addEventListener('orientationchange', (event) => {
 });
 
 window.addEventListener('resize', (event) => {
-	refillTextCard();
-	isOverlapDateCard();
+	// prevent iOS triggering resize on scroll
+	if (window.innerWidth != windowWidth) {
+		refillTextCard();
+		isOverlapDateCard();
+
+		windowWidth = window.innerWidth;
+	}
 })
