@@ -1,5 +1,6 @@
 $container-margin: 1.5em;
 $container-content: calc(100% - 8rem);
+$wide-container-margin: 16em;
 $greyscale-color: #777777;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -51,5 +52,5 @@ section {
 @media only screen and (min-width: 768px) {
     section {
         min-width: 48em;
-    }
+	}
 }
