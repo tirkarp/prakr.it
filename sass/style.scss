@@ -1,6 +1,8 @@
 $container-margin: 1.5em;
+$medium-container-margin: 4em;
+$wide-container-margin: 6em;
+$superwide-container-margin: 16em;
 $container-content: calc(100% - 8rem);
-$wide-container-margin: 16em;
 $greyscale-color: #777777;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -52,5 +54,21 @@ section {
 @media only screen and (min-width: 768px) {
     section {
         min-width: 48em;
+	}
+
+	.container {
+		margin: 0 $medium-container-margin;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.container {
+		margin: 0 $wide-container-margin;
+	}
+}
+
+@media only screen and (min-width: 1768px) {
+	.container {
+		margin: 0 $superwide-container-margin;
 	}
 }

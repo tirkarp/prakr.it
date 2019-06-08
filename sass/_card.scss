@@ -98,3 +98,45 @@ $card-margin: 0.8em;
         width: 32%;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .card:first-child {
+        margin-left: $medium-container-margin;
+    }
+
+    .card:last-child {
+        margin-right: $medium-container-margin;
+    }
+
+    .card {
+        margin: 0 0.8em;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .card:first-child {
+        margin-left: $wide-container-margin;
+    }
+
+    .card:last-child {
+        margin-right: $wide-container-margin;
+    }
+
+    .card {
+        margin: 0 1em;
+    }
+}
+
+@media only screen and (min-width: 1768px) {
+    .card:first-child {
+        margin-left: $superwide-container-margin;
+    }
+
+    .card:last-child {
+        margin-right: $superwide-container-margin;
+    }
+
+    .card {
+        margin: 0 3em;
+    }
+}

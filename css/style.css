@@ -86,6 +86,45 @@
     width: 32%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .card:first-child {
+    margin-left: 4em;
+  }
+
+  .card:last-child {
+    margin-right: 4em;
+  }
+
+  .card {
+    margin: 0 0.8em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .card:first-child {
+    margin-left: 6em;
+  }
+
+  .card:last-child {
+    margin-right: 6em;
+  }
+
+  .card {
+    margin: 0 1em;
+  }
+}
+@media only screen and (min-width: 1768px) {
+  .card:first-child {
+    margin-left: 16em;
+  }
+
+  .card:last-child {
+    margin-right: 16em;
+  }
+
+  .card {
+    margin: 0 3em;
+  }
+}
 #about {
   text-align: center;
   height: calc(88% + 1.5em);
@@ -248,6 +287,20 @@ section h1 {
 @media only screen and (min-width: 768px) {
   section {
     min-width: 48em;
+  }
+
+  .container {
+    margin: 0 4em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    margin: 0 6em;
+  }
+}
+@media only screen and (min-width: 1768px) {
+  .container {
+    margin: 0 16em;
   }
 }
 
