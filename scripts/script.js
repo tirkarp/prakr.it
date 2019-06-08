@@ -151,8 +151,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	loadCalendar();
 });
 
-window.addEventListener('resize', (event) => {
+window.addEventListener('orientationchange', (event) => {
 	loadCalendar();
 	refillTextCard();
 	isOverlapDateCard();
 });
+
+window.addEventListener('resize', (event) => {
+	refillTextCard();
+	isOverlapDateCard();
+})
