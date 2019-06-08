@@ -145,7 +145,7 @@ function loadCalendar() {
 	let calendar = document.getElementById('calendar-content');
 
 	// if resolution is wide enough, switch Calendar to Week Mode
-	ifWidthGreaterThan(768, desktopCalendar, mobileCalendar, calendar);
+	ifWidthGreaterThan(640, desktopCalendar, mobileCalendar, calendar);
 }
 
 
