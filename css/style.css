@@ -227,7 +227,7 @@
   justify-content: space-between;
   max-height: calc(100% - 8rem);
   margin-top: 1.2em;
-  margin-bottom: 2.4em;
+  padding-bottom: 2.4em;
 }
 #contact #contact-icons a {
   display: inline-block;
