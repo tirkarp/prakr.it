@@ -209,6 +209,7 @@
 }
 #calendar {
   min-height: 24em;
+  max-height: 48em;
 }
 #calendar iframe {
   width: 100px !important;
