@@ -1,8 +1,17 @@
 #blog {
 	height: 70%;
+	min-height: 28em;
+	max-height: 42em;
 	background-color: aquamarine;
 
 	.container {
 		height: initial;
 	}
+}
+
+@media only screen and (min-width: 630px) {
+    #blog {
+        height: 90%;
+    }
+
 }
