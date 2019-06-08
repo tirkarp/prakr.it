@@ -72,3 +72,17 @@ section {
 		margin: 0 $superwide-container-margin;
 	}
 }
+
+@media only print {
+	section {
+		height: 100% !important;
+	}
+
+	#calendar {
+		display: none;
+	}
+	
+	#contact {
+		display: none;
+	}
+}

@@ -207,6 +207,9 @@
     height: 76%;
   }
 }
+#calendar {
+  min-height: 24em;
+}
 #calendar iframe {
   width: 100px !important;
   height: 100px !important;
@@ -311,6 +314,19 @@ section h1 {
 @media only screen and (min-width: 1768px) {
   .container {
     margin: 0 16em;
+  }
+}
+@media only print {
+  section {
+    height: 100% !important;
+  }
+
+  #calendar {
+    display: none;
+  }
+
+  #contact {
+    display: none;
   }
 }
 
