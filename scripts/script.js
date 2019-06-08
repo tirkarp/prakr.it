@@ -165,7 +165,8 @@ window.addEventListener('resize', (event) => {
 	if (window.innerWidth != windowWidth) {
 		refillTextCard();
 		isOverlapDateCard();
+		loadCalendar();
 
 		windowWidth = window.innerWidth;
 	}
-})
+});
