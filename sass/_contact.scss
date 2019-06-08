@@ -8,7 +8,7 @@
 		justify-content: space-between;
 		max-height: $container-content;
 		margin-top: 1.2em;
-		margin-bottom: 2em;
+		margin-bottom: 2.4em;
 
 		a {
 			display: inline-block;
@@ -37,5 +37,21 @@
 
 	#credits, #credits * {
 		color: #c0c0c0;
+	}
+}
+
+@media only screen and (min-width: 430px) {
+	#contact {
+		#contact-icons {
+			justify-content: flex-start;
+			margin-left: -0.3em;
+			margin-top: 1.6em;
+		}
+
+		span {
+			width: 4.2em;
+		}
+
+
 	}
 }

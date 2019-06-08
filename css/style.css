@@ -224,7 +224,7 @@
   justify-content: space-between;
   max-height: calc(100% - 8rem);
   margin-top: 1.2em;
-  margin-bottom: 2em;
+  margin-bottom: 2.4em;
 }
 #contact #contact-icons a {
   display: inline-block;
@@ -249,6 +249,16 @@
   color: #c0c0c0;
 }
 
+@media only screen and (min-width: 430px) {
+  #contact #contact-icons {
+    justify-content: flex-start;
+    margin-left: -0.3em;
+    margin-top: 1.6em;
+  }
+  #contact span {
+    width: 4.2em;
+  }
+}
 html {
   height: 100%;
   font-family: Helvetica, Arial, sans-serif;
