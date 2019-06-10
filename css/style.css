@@ -239,6 +239,9 @@
   width: 100%;
   fill: #777777;
 }
+#contact svg:hover {
+  fill: #a5a5a5;
+}
 #contact a {
   color: #777777;
 }
