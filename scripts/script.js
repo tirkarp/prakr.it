@@ -121,8 +121,7 @@ function refillTextCard() {
 
 	let mobileCard = (node) => {
 		node.childNodes.forEach((card, index) => {
-			card.querySelector('.description').innerHTML = 
-											shorten(cardDetails[index].description, 50);
+			card.querySelector('.description').innerHTML = shorten(cardDetails[index].description, 50);
 			card.querySelector('.date').innerHTML = cardDetails[index].date;
 		});
 	};
@@ -135,11 +134,14 @@ function refillTextCard() {
 
 
 function loadCalendar() {
+	let calendarSource = '<iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=cGR1YW5nc3VAZ21haWwuY29t&amp;src=a2xkNjE1dDlzNGxiY2Jua2p0OWkxZWpqaGJ2NDkwOHNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cTc5dDlwYWpqYmgyNXFmc2wwbzdxMHY4bDQ1NHZqNDdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=czFnMWg2Ym44bXJoODh1NDA4MmxnYmJyZjVtMHBrdHRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=MHVxdXJrZDBuaGdzcjBsbnVpNGJicWkwNGM0cWRub2pAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Nm02dGIyMjNibW5wcDgybTRsZm8wN3Z1cWNhaTE1ZGRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cWw4NzlqcjE1ZmRjbzlidThuMGdjMzZjbTVndTdjNGhAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23cca300&amp;color=%23E4C441&amp;color=%23E4C441&amp;color=%23616161&amp;color=%230B8043&amp;color=%23039BE5&amp;color=%23B39DDB&amp;color=%23D81B60&amp;showTitle=0&amp;showDate=1&amp;showNav=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showTz=1&amp;mode=';
+	let calendarStyle = '" style="border-width:0" width="" height="300" frameborder="0" scrolling="no"></iframe>'
+	
 	let desktopCalendar = (node) => {
-		node.outerHTML = `<iframe id="calendar-content" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=cGR1YW5nc3VAZ21haWwuY29t&amp;src=Nm02dGIyMjNibW5wcDgybTRsZm8wN3Z1cWNhaTE1ZGRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=czFnMWg2Ym44bXJoODh1NDA4MmxnYmJyZjVtMHBrdHRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=MHVxdXJrZDBuaGdzcjBsbnVpNGJicWkwNGM0cWRub2pAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cTc5dDlwYWpqYmgyNXFmc2wwbzdxMHY4bDQ1NHZqNDdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=dWVsb285M2cwbml2aWdkZnF2NjdkYWxqNmtoaGN2bGpAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cWw4NzlqcjE1ZmRjbzlidThuMGdjMzZjbTVndTdjNGhAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23cca300&amp;color=%23B39DDB&amp;color=%23616161&amp;color=%230B8043&amp;color=%23039BE5&amp;color=%23E4C441&amp;color=%23F09300&amp;color=%23D81B60&amp;showPrint=0&amp;showCalendars=0&amp;showTabs=1&amp;showDate=1&amp;showNav=1&amp;showTitle=0&amp;mode=WEEK" style="border-width:0" width="" height="300" frameborder="0" scrolling="no"></iframe>`
+		node.outerHTML = calendarSource + 'WEEK' + calendarStyle;
 	};
 	let mobileCalendar = (node) => {
-		node.outerHTML = `<iframe id="calendar-content" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=cGR1YW5nc3VAZ21haWwuY29t&amp;src=Nm02dGIyMjNibW5wcDgybTRsZm8wN3Z1cWNhaTE1ZGRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=czFnMWg2Ym44bXJoODh1NDA4MmxnYmJyZjVtMHBrdHRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=MHVxdXJrZDBuaGdzcjBsbnVpNGJicWkwNGM0cWRub2pAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cTc5dDlwYWpqYmgyNXFmc2wwbzdxMHY4bDQ1NHZqNDdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=dWVsb285M2cwbml2aWdkZnF2NjdkYWxqNmtoaGN2bGpAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cWw4NzlqcjE1ZmRjbzlidThuMGdjMzZjbTVndTdjNGhAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23cca300&amp;color=%23B39DDB&amp;color=%23616161&amp;color=%230B8043&amp;color=%23039BE5&amp;color=%23E4C441&amp;color=%23F09300&amp;color=%23D81B60&amp;showPrint=0&amp;showCalendars=0&amp;showTabs=1&amp;showDate=1&amp;showNav=1&amp;showTitle=0&amp;mode=AGENDA" style="border-width:0" width="" height="300" frameborder="0" scrolling="no"></iframe>`
+		node.outerHTML = calendarSource + 'AGENDA' + calendarStyle;
 	};
 
 	let calendar = document.getElementById('calendar-content');
