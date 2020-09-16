@@ -50,7 +50,7 @@ function isOverlapDateCard() {
 
 
 function loadCards() {
-	fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@brillydev')
+	fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@tirkarp')
 	.then((res) => {
 		if (res.ok) {
 			return res.json();
