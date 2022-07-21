@@ -15,3 +15,7 @@ body {
 	object-fit: contain;
 	cursor: pointer;
 }
+
+audio {
+	display: none;
+}
