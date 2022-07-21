@@ -7,10 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>👁️ eyefufu</title>
         <link rel="stylesheet" type="text/css" href="eyefufu/eyefufu.css">
+        <script src="eyefufu/eyefufu.js"></script>
     </head>
     <body>
-        <img id="pic" src="eyefufu/happybirthday.png">
-        <audio autoplay="true" src="eyefufu/happybirthday.mp3">
+        <img id="pic" src="eyefufu/happybirthday.png" onclick="manageAudio()">
+        <audio id="song" loop controls autoplay>
+            <source src="eyefufu/happybirthday.mp3" type="audio/mp3">
+            Too bad your browser can't play the happy birthday song :-(
+        </audio>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141370543-1"></script>
