@@ -1,0 +1,15 @@
+html {
+	background-color: #62c9d2;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#pic {
+	width: 80%;
+	object-fit: contain;
+}
